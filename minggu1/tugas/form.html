@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+</head>
+
+<body>
+    <center>
+        <form action="#">
+            <table style=" border: 5px solid palevioletred; border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h1>Formulir Biodata</h1>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <label for="name">Nama &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;: </label>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim">NIM &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;&nbsp; :</label>
+                        <input type="text" name="nim" id="nim">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jurusan">Jurusan&emsp;&emsp;&ensp;&ensp;&ensp;&nbsp;:</label>
+                        <input type="text" name="jurusan" id="jurusan">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fakultas">Fakultas&emsp;&emsp;&ensp;&ensp;&nbsp;&nbsp;:</label>
+                        <select name="fakultas" id="fakultas">
+                            <option>Fakultas Ilmu Komputer</option>
+                            <option>Fakultas Ekonomi & Bisnis</option>
+                            <option>Fakultas Kedokteran</option>
+                            <option>Fakultas Ilmu Budaya</option>
+                            <option>Fakultas Kesehatan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="angkatan">Angkatan &emsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+                        <input type="number" name="angkatan" id="angkatan">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Jenis Kelamin &emsp;:</label>
+                        <label for="Pria">Pria</label>
+                        <input type="radio" id="Pria" name="gender" value="pria">
+
+                        <label for="Wanita">Wanita</label>
+                        <input type="radio" id="Wanita" name="gender" value="wanita">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;: </label>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        <button><a href="biodata.html">Biodata</a></button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
+<!-- &emsp = 4space -->
+<!-- &ensp = 2space -->
+<!-- &nbsp = 1space -->
