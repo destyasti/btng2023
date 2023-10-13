@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+
+    <!-- atribut group selector -->
+    <style>
+        a[target] {
+            background-color: yellow;
+        }
+    </style>
+
+
+    <!-- atribut "value" group selector -->
+    <style>
+        [title="udinus"] {
+            color: green;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        [title="dncc"] {
+            font-size: 17px;
+            text-align: center;
+            margin-top: 0px;
+        }
+    </style>
+
+    <!-- PSEUDO CLASSES -->
+    <!-- HOVER -->
+    <style>
+        a:hover {
+            background-color: aqua;
+            color: red;
+        }
+    </style>
+
+    <!-- FOKUS -->
+    <style>
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #000;
+            background-color: yellow
+        }
+    </style>
+
+    <!-- ACTIVE -->
+    <style>
+        button:active {
+            background-color: #000;
+            color: yellowgreen;
+        }
+    </style>
+
+    <!-- CHECKED -->
+    <style>
+        input[type="checkbox"]:checked {
+            outline: 4px solid blue;
+        }
+
+        input[type="checkbox"]:checked+h1 {
+            display: inline;
+        }
+
+        h1 {
+            margin: 10px;
+            display: none;
+        }
+    </style>
+
+    <!-- PSEUDO ELEMENT-->
+    <style>
+        blockquote {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+
+        blockquote:before {
+            content: open-quote;
+        }
+
+        blockquote:after {
+            content: close-quote;
+        }
+
+        blockquote:before,
+        blockquote:after {
+            display: inline-block;
+            vertical-align: bottom;
+            color: blue;
+            font-size: 4em;
+            top: .2em;
+            position: relative;
+        }
+    </style>
+
+    <!-- absolute lengths -->
+    <style>
+        .px {
+            font-size: 12px;
+        }
+
+        .pt {
+            font-size: 12pt;
+        }
+
+        .cm {
+            font-size: 1cm;
+        }
+
+        .mm {
+            font-size: 10mm;
+        }
+    </style>
+
+    <!-- RELATIVE LENGTHS -->
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        div {
+            font-size: 13rem;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        #top-div {
+            font-size: 2rem;
+            border: 1px solid red;
+        }
+
+        span {
+            font-size: 0.5em;
+        }
+    </style> -->
+    <style>
+        h1 {
+            font-size: 20vw;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    </style>
+
+    <!-- TEXT STYLING -->
+    <!-- COLOR -->
+    <style>
+        body {
+            color: blue;
+        }
+
+        h1 {
+            color: green;
+            background-color: darkgoldenrod;
+        }
+    </style>
+
+    <!-- TEXT-ALIGN -->
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: right;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+
+    <!-- VERTICAL-ALIGN -->
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 0.5em;
+            font-family: monospace;
+        }
+    </style>
+
+    <!-- TEXT-DECORATION -->
+    <style>
+        h1 {
+            text-decoration: underline red wavy .5px;
+        }
+
+        h2 {
+            text-decoration-line: underline;
+            text-decoration-color: brown;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 2px;
+        }
+
+        h3 {
+            text-decoration: underline blue;
+        }
+    </style>
+
+    <!-- TEXT-TRANSFORM -->
+    <style>
+        div.a {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- TEXT SHADOW -->
+    <style>
+        h1 {
+            text-shadow: 2px 2px 5px #3366ff;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <h1 style="font-size: 45px;">Judul</h1>
+    <!-- class pakai titik (.), id pakai (#) contoh=>(h1.nameclass-h1#namaid)-->
+
+    <!--------------------------------------------------------SELECTOR------------------------------------------------------------->
+
+    <!-- SIMPLE SELECTOR (element selector) -->
+    <h1 class="judul">BTNG 2023</h1>
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores animi quos quibusdam? Sint, error nihil
+        incidunt laborum nisi exercitationem, suscipit molestias eius amet magnam natus reiciendis ex voluptates tempora
+        temporibus.</P>
+
+    <div class="content">
+        <span>Ini content</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga molestias eaque officiis voluptatem
+            labore eos dolores sapiente, sunt illum est accusantium aperiam, architecto nam at quis quisquam in eum!
+        </p>
+    </div>
+    <hr>
+
+    <!-- SIMPLE SELECTOR (id & class selector) -->
+    <div id="box-konten">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio minus ex dicta reiciendis ullam iure,
+            facere dolore iusto autem quam obcaecati nostrum quisquam aspernatur sed quidem, dolorum nemo voluptas?
+        </p>
+        <div class="konten">
+            <span>Ini Content</span>
+            <h1 class="judul">BTNG 2023</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi praesentium quis natus consectetur
+                obcaecati autem labore adipisci, accusamus quidem earum alias distinctio impedit officiis eius. Esse,
+                neque? Optio, rem iure?
+            </p>
+        </div>
+    </div>
+
+    <!-- GROUP SELECTOR (atribut selector) -->
+    <h2>CSS [attribut] Selector</h2>
+    <p>link dengan attribute target akan memiliki background berwarna kuning</p>
+    <a href="https://www.w3schools.com/html/default.asp">w3schools</a>
+    <a href="https://laravel.com/" target="_top">laravel</a>
+    <a href="https://www.instagram.com/">instagram</a>
+
+    <!-- GROUP SELECTOR (attribut="value") -->
+    <div title="udinus">Universitas Dian Nuswantoro</div>
+    <p title="dncc">Dian Nuswantoro Computer Club</p>
+
+    <!-- GROUP SELECTOR (Child(>)) and (Descendant(<space>)) -->
+    <div>Child selector property</div>
+    <p>Belajar css selector</p>
+    <div>
+        <p>paragraf pertama</p>
+        <p>paragraf kedua</p>
+        <section>
+            <p>paragraf ketiga ada di dalam section</p>
+        </section>
+    </div>
+    <p>DNCC</p>
+    <p>BTNG</p>
+
+    <!-- MULTIPLE SELECTOR -->
+    <div>multiple selector property</div>
+    <p>belajar css selector</p>
+    <div>
+        <p class="p1">paragraf 1</p>
+        <p class="p2">paragraf 2</p>
+        <section>
+            <p class="p3">paragraf ketiga ada di dalam section</p>
+        </section>
+    </div>
+    <p>BTNG</p>
+    <P>DNCC</P>
+    <hr>
+
+    <!----------------------------------------------------- PSEUDO CLASSES ------------------------------------------------------>
+
+    <!-- HOVER -->
+    <a href="https://www.instagram.com/">INI LINK INSTAGRAM</a>
+
+    <!-- FOCUS -->
+    <input type="text" />
+
+    <!-- ACTIVE -->
+    <button>BTNG 2023</button>
+
+    <!-- CHECKED -->
+    <input type="checkbox">
+    <h1>checkbox aktif</h1>
+
+    <!-- NTH-CHILD() -->
+    <div>
+        <p>teks elemen div pertama</p>
+    </div>
+    <div>
+        <p>teks elemen div kedua</p>
+    </div>
+    <div>
+        <p>teks elemen div ketiga</p>
+    </div>
+
+    <ul class="satu">
+        <li>list item pertama</li>
+        <li>list item kedua</li>
+        <li>list item ketiga</li>
+        <li>list item keempat</li>
+        <li>list item kelima</li>
+    </ul>
+
+    <ul class="dua">
+        <li>list item pertama</li>
+        <li>list item kedua</li>
+        <li>list item ketiga</li>
+        <li>list item keempat</li>
+        <li>list item kelima</li>
+    </ul>
+
+    <!-- NTH-OF-TYPE () -->
+    <div>
+        <h1>judul</h1>
+        <p>paragraf pertama</p>
+        <p>paragraf kedua</p>
+        <p>paragraf ketigaa</p>
+    </div>
+
+    <!-- FIRST-CHILD -->
+    <div>
+        <p>paragraf pertama (parentnya adalah div)</p>
+        <p>paragraf kedua (parentnya adalah div)</p>
+    </div>
+    <p>Paragraf pertama (parentnya adalah body)</p>
+    <p>Paragraf kedua (parentnya adalah body)</p>
+    <p>Paragraf ketiga (parentnya adalah body)</p>
+    <p>Paragraf keempat (parentnya adalah body)</p>
+
+    <!-- LAST CHILD -->
+    <div>
+        <p>paragraf pertama (parentnya adalah div)</p>
+        <p>paragraf kedua (parentnya adalah div)</p>
+    </div>
+    <p>Paragraf pertama (parentnya adalah body)</p>
+    <p>Paragraf kedua (parentnya adalah body)</p>
+    <p>Paragraf ketiga (parentnya adalah body)</p>
+    <p>Paragraf keempat (parentnya adalah body)</p>
+
+    <!-- ------------------------------------------------PSEUDO ELEMENT ---------------------------------------------------------->
+
+    ::before : Menambahkan konten sebelum elemen.
+    ::after : Menambahkan konten setelah elemen.
+    ::first-letter : Menerapkan gaya khusus pada huruf pertama dari elemen.
+    ::first-line : Menerapkan gaya khusus pada baris pertama dari elemen. -->
+    <h1>::before dan ::after selector</h1>
+    <p>
+    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe, aperiam in molestiae beatae enim
+        delectus, neque at natus fugit necessitatibus eum eaque sequi blanditiis reprehenderit quia iste, commodi alias.
+    </blockquote>
+    </p>
+
+    <!------------------------------------------------- VALUES AND UNIT----------------------------------------------------------->
+
+    <!-- ABSOLUTE LENGTHS -->
+    <p class='px'>contoh penggunaan unit px</p>
+    <p class='pt'>contoh penggunaan unit pt</p>
+    <p class='cm'>contoh penggunaan unit cm</p>
+    <p class='mm'>contoh penggunaan unit mm</p>
+
+    <!-- RELATIVE LENGTHS -->
+    <p>Ukuran teks dokumen ini adalah 16px</p>
+    <div id="top-div">
+        font-size elemen div ini adalah 2rem,artinya 2 kali dari ukuran inti (html)
+        <div>font size div ini adalah 3rem.
+            <span>Sedangkan span ini berukuran 0.5em, dan span ini terletak didalam div tadi.</span>
+        </div>
+        <p>unit rem menetapkan ukuran font relatif terhadap ukuran font dasar browser, dan tidak akan mewarisi induknya
+        </p>
+    </div> -->
+    <h1>UDINUS</h1>
+    <p>Tulisan ini ukurannya akan tetap 15px dan tidak akan berubah meskipun layarnya kecil ataupun besar</p>
+    <p>1vw = 1% dari lebar viewport.</p>
+
+    <!------------------------------------------------------- TEXT STYLING -------------------------------------------------------->
+
+    <!-- COLOR -->
+    <h1>judul berita</h1>
+    <p>ini adalah paragraf biasa,berwarna biru</p>
+    <p>paragraf lain</p>
+
+    <!--  TEXT-ALIGN -->
+    <h1> Heading 1 (center)</h1>
+    <h2> Heading 2 (left)</h2>
+    <h3> Heading 3 (right)</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magni, necessitatibus quia cum sapiente quo nihil
+        commodi quos, delectus suscipit deserunt eaque. Perferendis enim odit dolorum explicabo minus veniam
+        <b>tarara</b>?
+    </p>
+
+    <!-- VERTICAL-ALIGN -->
+    <table>
+        <tr>
+            <td style="vertical-align: baseline;">baseline</td>
+            <td style="vertical-align: top;">top</td>
+            <td style="vertical-align: middle;">middle</td>
+            <td style="vertical-align: bottom;">bottom</td>
+            <td>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptate qui porro odit debitis
+                    nam
+                    placeat maxime, ullam eum, neque possimus nobis. Ut nesciunt non itaque! Hic, error sunt.
+                    Doloremque!
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- TEXT-DECORATION -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <!-- TEXT-TRANSFORM -->
+    <h1>property text-transform</h1>
+    <h2>text-transform: uppercase:</h2>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+
+    <!-- SHADOW -->
+    <h1>The text shadow property</h1>
+
+    <!-------------------------------------------------- BOX MODEL & LAYOUT ----------------------------------------------------->
+    <!-- BOX MODEL -->
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione odio pariatur vero saepe vitae beatae
+        placeat dicta explicabo officiis molestias molestiae obcaecati a aliquam non, at minima perspiciatis culpa!
+    </div>
+    <!------------------------------------------------------ STYLING ------------------------------------------------------------->
+    <!-- background -->
+    <h1>Hello World!</h1>
+    <p>Mari Belajar Background</p>
+</body>
+
+</html>

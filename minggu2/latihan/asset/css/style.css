@@ -1,0 +1,119 @@
+/* simple selector (element selector) */
+h1 {
+  font-weight: 600;
+  text-decoration: underline;
+}
+p {
+  font-size: 12px;
+  background-color: aqua;
+}
+span {
+  color: blue;
+}
+
+/* simple selector (id & class selector) */
+#box-konten {
+  box-shadow: 10px 13px 0 px -1px rgb(170, 32, 156);
+}
+.judul {
+  font-weight: bold 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Group Selector (Child Selector (>))  */
+div > p {
+  color: darkgreen;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+/* Group Selector (Descendant Selector (<space>)) */
+div p {
+  color: darkgreen;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+/* Multiple Selection */
+.p1,
+.p3 {
+  color: darkgreen;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+/* nth-child() */
+menyeleksi elemen div kedua */
+/* div:nth-child(2) {
+  background: red;
+}
+
+/* menyeleksi elemen 'li' yg berada diposisi genap (even) dari elemen 'ul' yg memiliki class 'satu' */
+ul.satu li:nth-child(even) {
+  background: lightgreen;
+}
+
+/* menyeleksi elemen 'li' yg berada diposisi ketiga dari elemen 'ul' yg memiliki class 'dua' */
+ul.dua li:nth-child(3) {
+  background: blue;
+}
+
+/* nth-of-type() */
+p:nth-of-type(2) {
+  color: aquamarine;
+}
+
+/* first-child */
+p:first-of-type {
+  background-color: red;
+}
+p:first-child {
+  background-color: yellow;
+}
+
+/* last-child */
+p:last-of-type {
+  background-color: red;
+}
+p:last-child {
+  background-color: red;
+}
+
+/* box content */
+.content {
+  background-color: aqua;
+  width: 300px;
+  border: 15px solid gray;
+  padding: 50px;
+  margin: 20px;
+}
+
+/* background */
+body {
+  background: url(../img/plant.jpg);
+}
